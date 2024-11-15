@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "concurrently": "^9.1.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  },
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "main": "node server.js",
+    "lit": "npm run dev --prefix frontend",
+    "start": "concurrently \"npm run main\" \"npm run lit\"",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
